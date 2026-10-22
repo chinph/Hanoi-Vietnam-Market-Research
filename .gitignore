@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.env
+
+# Raw API/HTML responses are re-creatable with `python src/fetch_data.py --refresh`;
+# the tidy snapshots in data/processed/ are committed so results reproduce offline.
+data/raw/
