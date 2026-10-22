@@ -1,0 +1,3919 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3251222eb038482811a140f5e14ce7cb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3251222eb038482811a140f5e14ce7cb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3251222eb038482811a140f5e14ce7cb = L.map(
+                "map_3251222eb038482811a140f5e14ce7cb",
+                {
+                    center: [21.011147324952322, 105.82397095059824],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d32325394fe23fa906612c26bf3f4b21 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d32325394fe23fa906612c26bf3f4b21.addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            var rectangle_2892da7d9a27bc144a57fd31983bb26f = L.rectangle(
+                [[20.982840691250505, 105.79208013045705], [20.98733224712546, 105.79689075755026]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.07165528098915735, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_2892da7d9a27bc144a57fd31983bb26f.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 0.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_345ed635b5a68a257a033e2ad597c53b = L.rectangle(
+                [[21.00091025460562, 105.79217544108714], [21.005401810480578, 105.79698665041387]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.05454524018793938, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_345ed635b5a68a257a033e2ad597c53b.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 2 · expected 2.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_e662e81a2e75bc2fd75a7708a2ed2870 = L.rectangle(
+                [[20.98281818896391, 105.79689017050478], [20.987309744838868, 105.80170079687329]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.04284014942449062, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_e662e81a2e75bc2fd75a7708a2ed2870.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 1 · expected 0.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_618003c9357f31ad4b2e4b4ecf31a301 = L.rectangle(
+                [[20.987335578143234, 105.79691413327434], [20.99182713401819, 105.80172490514293]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.10813884674132984, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_618003c9357f31ad4b2e4b4ecf31a301.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 1 · expected 2.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_d1659f258f56332a4032101905d6be78 = L.rectangle(
+                [[20.991852964902037, 105.79693810241046], [20.996344520776994, 105.80174901981776]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.09247855637881242, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_d1659f258f56332a4032101905d6be78.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 1.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_320e0b03cd66b993adbf1add51e1d899 = L.rectangle(
+                [[20.99637034923991, 105.79696207791402], [21.000861905114867, 105.80177314089865]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.15284670375092504, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_320e0b03cd66b993adbf1add51e1d899.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 1.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_8f8ca7b865d7709fb414483c785d73c5 = L.rectangle(
+                [[21.000887731156404, 105.79698605978584], [21.00537928703136, 105.80179726838645]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.012023951780218515, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_8f8ca7b865d7709fb414483c785d73c5.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 1 · expected 1.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_9d3dee04cfc0dbc0698f001dc7068f99 = L.rectangle(
+                [[21.023474604403493, 105.79710606469975], [21.02796616027845, 105.80191800196006]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.17066859986936386, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_9d3dee04cfc0dbc0698f001dc7068f99.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 0 · expected 1.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_7854543e927c92bba590744db04acefb = L.rectangle(
+                [[20.987312934742455, 105.80172431154348], [20.99180449061741, 105.80653508268266]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.13062950452120228, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_7854543e927c92bba590744db04acefb.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 1.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_12a2842c70496458695e73ff5d34744f = L.rectangle(
+                [[20.991830316178834, 105.80174842532227], [20.99632187205379, 105.80655934199979]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.19829382514946325, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_12a2842c70496458695e73ff5d34744f.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 1 · expected 3.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_d015f7493e4da83461e5f1464a6ef458 = L.rectangle(
+                [[20.996347695193965, 105.8017725455069], [21.00083925106892, 105.80658360776138]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.009908639776503305, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_d015f7493e4da83461e5f1464a6ef458.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 3 · expected 2.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_7e8badc7b70044e2d20212baeb82b60b = L.rectangle(
+                [[21.000865071787413, 105.80179667209826], [21.00535662766237, 105.80660787996835]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.37852929784653405, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_7e8badc7b70044e2d20212baeb82b60b.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 2 · expected 5.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_f8b79a0149891353c5ca9fa2c38de3fb = L.rectangle(
+                [[21.00538244595876, 105.8018208050972], [21.009874001833715, 105.80663215862155]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.4336299980192017, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_f8b79a0149891353c5ca9fa2c38de3fb.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 7 · expected 2.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_5c4382bb7a169efaf20a7f48f617d07a = L.rectangle(
+                [[21.01441718703344, 105.80186909032133], [21.018908742908398, 105.80668073527016]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_5c4382bb7a169efaf20a7f48f617d07a.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 7 · expected 0.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_06b6e37a67d7a27d9936d6c736eda862 = L.rectangle(
+                [[21.01893455393592, 105.80189324254827], [21.023426109810877, 105.80670503326733]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.00197408258768774, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_06b6e37a67d7a27d9936d6c736eda862.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 1 · expected 1.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_1be1491c6cc7857d0053925e217b623d = L.rectangle(
+                [[21.023451918414604, 105.8019174011863], [21.02794347428956, 105.80672933771427]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.02521768138352933, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_1be1491c6cc7857d0053925e217b623d.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 1 · expected 1.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_45ba5d44a5f0c1fb91d00f8fd9d6dd31 = L.rectangle(
+                [[20.982772777015278, 105.80651023141336], [20.987264332890234, 105.8113208563194]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.014472836566938277, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_45ba5d44a5f0c1fb91d00f8fd9d6dd31.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 1 · expected 0.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_68e73dc1dfb3d52c044378788ee53644 = L.rectangle(
+                [[20.98729015551844, 105.80653448339054], [20.991781711393397, 105.81134525379592]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.05890283259582599, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_68e73dc1dfb3d52c044378788ee53644.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 1 · expected 0.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_f1b0429d56bcdef3dd41f148cfa8f8f3 = L.rectangle(
+                [[20.991807531600465, 105.8065587418111], [20.99629908747542, 105.81136965775445]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.07181932028164413, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_f1b0429d56bcdef3dd41f148cfa8f8f3.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 0.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_9d013aec3a3e9895a56e2d07c7ccaecd = L.rectangle(
+                [[20.996324905260934, 105.80658300667595], [21.00081646113589, 105.81139406819592]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.09472257979814222, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_9d013aec3a3e9895a56e2d07c7ccaecd.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 1.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_fc9f0ed707f3bd65d0ae147599ae200e = L.rectangle(
+                [[21.0008422764994, 105.80660727798592], [21.005333832374358, 105.81141848512114]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.11906152616293571, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_fc9f0ed707f3bd65d0ae147599ae200e.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 2 · expected 0.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_efe1c07197eacea58ce4733ed4194837 = L.rectangle(
+                [[21.00535964531546, 105.80663155574194], [21.009851201190415, 105.81144290853103]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.10280495040042154, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_efe1c07197eacea58ce4733ed4194837.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 1.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_970986f897f6a20d4b798b3931b520de = L.rectangle(
+                [[21.00987701170868, 105.80665583994484], [21.014368567583638, 105.81146733842648]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.17302027098191572, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_970986f897f6a20d4b798b3931b520de.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 1 · expected 2.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_4d49fb635d241dcb3d12065347b958ca = L.rectangle(
+                [[21.01439437567863, 105.80668013059552], [21.018885931553587, 105.81149177480837]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.25972688143057115, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_4d49fb635d241dcb3d12065347b958ca.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 4 · expected 1.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_bd9e5fc2d7fb3b2f976cde6d7a241fa9 = L.rectangle(
+                [[21.018911737224894, 105.80670442769487], [21.02340329309985, 105.81151621767758]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.07456593535447135, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_bd9e5fc2d7fb3b2f976cde6d7a241fa9.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 7 · expected 6.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_9005092aab4cce088ea7d2de782d2641 = L.rectangle(
+                [[20.982749867354748, 105.81132025219739], [20.987241423229705, 105.81613087636563]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.1186212180406143, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_9005092aab4cce088ea7d2de782d2641.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 3 · expected 1.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_c1c133bde2f2cbac70308e106d0945f4 = L.rectangle(
+                [[20.98726724047195, 105.81134464877707], [20.991758796346907, 105.81615541844428]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.14147645344046111, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_c1c133bde2f2cbac70308e106d0945f4.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 1.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_6e218a6e384fd8cbad5118a5071cbe93 = L.rectangle(
+                [[20.9917846111677, 105.81136905183855], [20.996276167042655, 105.81617996704337]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.009240620755792956, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_6e218a6e384fd8cbad5118a5071cbe93.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 1 · expected 1.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_267266733121465435b1841bc894735b = L.rectangle(
+                [[20.996301979441572, 105.81139346138272], [21.00079353531653, 105.81620452216379]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.06363459254240787, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_267266733121465435b1841bc894735b.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 0.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_a5a2e932932ae89d9e31583def172c0f = L.rectangle(
+                [[21.00081934529314, 105.81141787741046], [21.005310901168098, 105.8162290838064]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.13858271077723205, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_a5a2e932932ae89d9e31583def172c0f.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 1 · expected 2.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_3868ecd56f93a56c1a60bcd62ab7a244 = L.rectangle(
+                [[21.005336708721984, 105.81144229992267], [21.00982826459694, 105.81625365197212]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.16885069457263724, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_3868ecd56f93a56c1a60bcd62ab7a244.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 1.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_7968ca111a36bcbd1f640d5904645b49 = L.rectangle(
+                [[21.00985406972767, 105.8114667289202], [21.014345625602626, 105.81627822666182]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.023767379430000672, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_7968ca111a36bcbd1f640d5904645b49.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 1 · expected 1.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_ebe9f13053f93edfc60d3fce7478ade9 = L.rectangle(
+                [[21.01437142830977, 105.81149116440393], [21.018862984184725, 105.8163028078764]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.20155346092559634, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_ebe9f13053f93edfc60d3fce7478ade9.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 5 · expected 2.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_91507a0c70c231b0a012e0006de810ba = L.rectangle(
+                [[20.982726821904436, 105.81613026648337], [20.987218377779392, 105.82094088990947]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.03939792392688835, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_91507a0c70c231b0a012e0006de810ba.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 0.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_72327304e80cea6e8b9c4787e941b27f = L.rectangle(
+                [[20.98724418960375, 105.81615480766467], [20.991735745478707, 105.82096557658937]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.058785948319413896, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_72327304e80cea6e8b9c4787e941b27f.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 0.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_ca163aeb8cea1f96347077e8ed9cb0e9 = L.rectangle(
+                [[20.991761554881293, 105.81617935536619], [20.99625311075625, 105.82099026982809]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.053664556373834334, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_ca163aeb8cea1f96347077e8ed9cb0e9.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 0.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_b22afc1ede0a728d0d0d70d53ea89174 = L.rectangle(
+                [[20.996278917736653, 105.81620390958881], [21.00077047361161, 105.82101496962659]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.07838929360796776, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_b22afc1ede0a728d0d0d70d53ea89174.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 1 · expected 1.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_77d89ea17246370e21a7b23f55c0b7ad = L.rectangle(
+                [[21.00079627816939, 105.81622847033343], [21.005287834044346, 105.82103967598572]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.3817621936262104, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_77d89ea17246370e21a7b23f55c0b7ad.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 5 · expected 1.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_ff80d31e993230c52e4a299d9d538e0c = L.rectangle(
+                [[21.00531363617908, 105.81625303760092], [21.009805192054035, 105.82106438890634]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.033527642161252744, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_ff80d31e993230c52e4a299d9d538e0c.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 1 · expected 0.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_a6241f7026fcb51a73d5e834d9753533 = L.rectangle(
+                [[21.00983099176531, 105.81627761139218], [21.014322547640266, 105.82108910838942]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.17302027098191572, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_a6241f7026fcb51a73d5e834d9753533.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 1 · expected 2.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_f5e67632646fb92d714d03c4b0ff51d2 = L.rectangle(
+                [[21.01434834492763, 105.81630219170812], [21.018839900802586, 105.82111383443579]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.25298294216247585, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_f5e67632646fb92d714d03c4b0ff51d2.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 3 · expected 0.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_fed391309623a7613476cb8b9d7f0f80 = L.rectangle(
+                [[20.987221002914605, 105.82096496001493], [20.991712558789562, 105.82577572819271]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.01992230831563449, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_fed391309623a7613476cb8b9d7f0f80.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 0.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_e2f725735ba5fe91c850727b18894d73 = L.rectangle(
+                [[20.99173836274203, 105.82098965235558], [20.996229918616987, 105.82580056607021]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.04558699217354512, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_e2f725735ba5fe91c850727b18894d73.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 0.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_0be1890a4a6a38484bcc21cdeeb739fd = L.rectangle(
+                [[20.996255720146944, 105.82101435125576], [21.0007472760219, 105.82582541054587]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.17397738049411066, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_0be1890a4a6a38484bcc21cdeeb739fd.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 1.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_9b22e54f99603eca2853612c6e5adf41 = L.rectangle(
+                [[21.000773075128926, 105.82103905671637], [21.005264631003882, 105.8258502616206]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.0012284537839162774, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_9b22e54f99603eca2853612c6e5adf41.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 1 · expected 1.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_4519f2aee595518f6f903b1bb4f9212b = L.rectangle(
+                [[21.005290427687537, 105.82106376873826], [21.009781983562494, 105.82587511929528]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.08667650237720677, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_4519f2aee595518f6f903b1bb4f9212b.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 2 · expected 2.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_08784542f8075489a3ff0f5e328df009 = L.rectangle(
+                [[21.00980777782237, 105.82108848732238], [21.014299333697327, 105.82589998357082]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.15766421584570878, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_08784542f8075489a3ff0f5e328df009.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 1 · expected 2.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_a112c7ff46c24083c99675fb6d5f1735 = L.rectangle(
+                [[21.014325125532988, 105.82111321246958], [21.018816681407944, 105.82592485444812]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.3571098333442078, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_a112c7ff46c24083c99675fb6d5f1735.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 5 · expected 1.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_06c18d79c1fcc4b36c6dceb13235b10f = L.rectangle(
+                [[21.018842470818967, 105.8211379441808], [21.023334026693924, 105.82594973192806]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.016011394167608387, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_06c18d79c1fcc4b36c6dceb13235b10f.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 3 · expected 3.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_bf697fb158d2f2bf9b63e42349cca4fe = L.rectangle(
+                [[21.02335981367988, 105.82116268245693], [21.027851369554835, 105.82597461601159]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.36859421914743234, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_bf697fb158d2f2bf9b63e42349cca4fe.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 10 · expected 6.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_4fe3e4700648746d4c456a3ceff02c24 = L.rectangle(
+                [[20.991715034750676, 105.82579994276831], [20.996206590625633, 105.83061085573128]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.08062770990512295, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_4fe3e4700648746d4c456a3ceff02c24.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 0.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_2435534b24536032a936d64f9e532964 = L.rectangle(
+                [[20.996232386673228, 105.82582478634515], [21.000723942548184, 105.83063584488323]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.19205120124268954, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_2435534b24536032a936d64f9e532964.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 1 · expected 3.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_7da2c2bb0c52b1fd0ffc065ba12da140 = L.rectangle(
+                [[21.00074973617252, 105.82584963652084], [21.005241292047476, 105.83066084067266]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.0636057745578946, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_7da2c2bb0c52b1fd0ffc065ba12da140.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 0 · expected 0.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_0def2284bcfe360238c4d4a49193fa98 = L.rectangle(
+                [[21.005267083248125, 105.82587449329627], [21.00975863912308, 105.83068584310048]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.010334810748837723, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_0def2284bcfe360238c4d4a49193fa98.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 1 · expected 1.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_84527b355f87459c903501a1885f60bc = L.rectangle(
+                [[21.00978442789964, 105.82589935667234], [21.014275983774596, 105.8307108521676]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.015179957030143479, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_84527b355f87459c903501a1885f60bc.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 2 · expected 2.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_9602f70df644a04424ff43d153819e59 = L.rectangle(
+                [[21.014301770126604, 105.82592422664996], [21.01879332600156, 105.83073586787492]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.15276874910462512, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_9602f70df644a04424ff43d153819e59.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 3 · expected 1.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_71d31269a955babcb32a3645f948eb1d = L.rectangle(
+                [[21.01881910992862, 105.82594910322999], [21.023310665803578, 105.83076089022333]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.06905314388452818, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_71d31269a955babcb32a3645f948eb1d.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 2 · expected 2.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_3c0cf8976278d88090955f0b0754b23f = L.rectangle(
+                [[21.02333644730525, 105.82597398641339], [21.027828003180208, 105.83078591921377]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.010654947582457056, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_3c0cf8976278d88090955f0b0754b23f.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 1 · expected 1.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_b6eb32c48f4f6fecee856341af0f02e6 = L.rectangle(
+                [[21.02785378225607, 105.82599887620104], [21.032345338131027, 105.83081095484711]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.28439016401838074, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_b6eb32c48f4f6fecee856341af0f02e6.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 3 · expected 5.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_552618102a1d7a9f20dc722997a34269 = L.rectangle(
+                [[20.98717422207661, 105.83058524494976], [20.991665777951567, 105.83539601162059]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.1788751798334497, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_552618102a1d7a9f20dc722997a34269.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 3 · expected 1.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_470dbc07cb36e710e519bea489ad27a5 = L.rectangle(
+                [[20.99169157090801, 105.830610226566], [20.996183126782967, 105.83542113877292]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.07483852700528357, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_470dbc07cb36e710e519bea489ad27a5.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 0.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_233dd04196b886bdebd315cd430a71a2 = L.rectangle(
+                [[20.99620891731627, 105.83063521481859], [21.000700473191227, 105.83544627260025]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.10425363449261665, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_233dd04196b886bdebd315cd430a71a2.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 1.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_65921267627d635fc3f86f450d86b362 = L.rectangle(
+                [[21.00072626130095, 105.83066020970845], [21.005217817175907, 105.83547141310349]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.047527262317128005, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_65921267627d635fc3f86f450d86b362.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 0 · expected 0.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_915c07ce4e2efe9d26b3d88769f8462b = L.rectangle(
+                [[21.005243602861622, 105.8306852112365], [21.00973515873658, 105.83549656028356]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_915c07ce4e2efe9d26b3d88769f8462b.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 15 · expected 5.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_4cdb46c6b549f3f05c84fed55d1712eb = L.rectangle(
+                [[21.009760941997882, 105.83071021940363], [21.01425249787284, 105.83552171414134]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_4cdb46c6b549f3f05c84fed55d1712eb.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 12 · expected 6.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_b6d46b9c82689bed9991af2f2e8e9cee = L.rectangle(
+                [[21.01427827870927, 105.83073523421072], [21.018769834584226, 105.83554687467776]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.35904981019484883, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_b6d46b9c82689bed9991af2f2e8e9cee.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 2 · expected 5.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_1a0fbc3a1a0dcc0d96b96dec293c73e1 = L.rectangle(
+                [[21.018795612995394, 105.8307602556587], [21.02328716887035, 105.83557204189373]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.07833826336882393, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_1a0fbc3a1a0dcc0d96b96dec293c73e1.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 0 · expected 0.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_d5679423bdc1e472cfd2bb295ef8590a = L.rectangle(
+                [[21.0233129448558, 105.83078528374848], [21.027804500730756, 105.83559721579017]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.3461466750530305, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_d5679423bdc1e472cfd2bb295ef8590a.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 1 · expected 4.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_bfe0d8033b80bcd9b7672b6e0dd8a56a = L.rectangle(
+                [[21.027830274290075, 105.83081031848097], [21.03232183016503, 105.83562239636798]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.5477785793958644, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_bfe0d8033b80bcd9b7672b6e0dd8a56a.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 2 · expected 7.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_8b048693361d6cfbaca2a6cf9260c49e = L.rectangle(
+                [[20.982633282220757, 105.83537025787868], [20.987124838095713, 105.84018087829239]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.03689137567311998, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_8b048693361d6cfbaca2a6cf9260c49e.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 0.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_10dedb37c3cf24d37a8aae62a34b0aac = L.rectangle(
+                [[20.987150627929314, 105.83539537745749], [20.99164218380427, 105.84020614336829]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.006355584189417138, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_10dedb37c3cf24d37a8aae62a34b0aac.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 1 · expected 0.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_4cbdff7a742da85cf4f2484358ebcd58 = L.rectangle(
+                [[20.991667971214827, 105.83542050371017], [20.996159527089784, 105.84023141515667]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.03939792392688835, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_4cbdff7a742da85cf4f2484358ebcd58.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 0 · expected 0.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_2daaf9750c387b9b5aee522729b48b2c = L.rectangle(
+                [[20.99618531207687, 105.83544563663762], [21.000676867951828, 105.84025669365849]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.037495485407307114, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_2daaf9750c387b9b5aee522729b48b2c.bindTooltip(
+                `<div>
+                     Thanh Xuân · mapped cafés 2 · expected 1.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_64aa314871c25cc3f147bc5ac65f41c0 = L.rectangle(
+                [[21.00070265051501, 105.83547077624077], [21.005194206389966, 105.84028197887461]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.07177812056773025, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_64aa314871c25cc3f147bc5ac65f41c0.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 2 · expected 1.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_e48a47195d24c0b5ba8f8b6f9bc9c405 = L.rectangle(
+                [[21.00521998652882, 105.83549592252052], [21.009711542403778, 105.84030727080602]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.3373398124820857, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_e48a47195d24c0b5ba8f8b6f9bc9c405.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 2 · expected 5.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_0c033059feb72388313e3928d96f9028 = L.rectangle(
+                [[21.009737320117885, 105.83552107547777], [21.014228875992842, 105.84033256945355]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.55, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_0c033059feb72388313e3928d96f9028.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 10 · expected 0.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_bbf56e774d221938e21d6403e61ce1b4 = L.rectangle(
+                [[21.014254651281767, 105.83554623511347], [21.018746207156724, 105.84035787481818]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.12212867784836459, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_bbf56e774d221938e21d6403e61ce1b4.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 2 · expected 0.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_8179a73d19e0bbd60ca58ee32f9b6df9 = L.rectangle(
+                [[21.018771980020055, 105.83557140142848], [21.023263535895012, 105.84038318690081]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2a78d6", "fillOpacity": 0.015913050107078476, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_8179a73d19e0bbd60ca58ee32f9b6df9.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 1 · expected 0.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var rectangle_9a342a869244b1d323dac4105e7a9361 = L.rectangle(
+                [[21.02328930633231, 105.83559657442375], [21.027780862207265, 105.84040850570234]],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e34948", "fillOpacity": 0.02382018956121047, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            rectangle_9a342a869244b1d323dac4105e7a9361.bindTooltip(
+                `<div>
+                     Đống Đa · mapped cafés 5 · expected 5.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f23fc49a04136262ff621f6e6c7167d = L.circleMarker(
+                [21.0264433, 105.8368669],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_0f23fc49a04136262ff621f6e6c7167d.bindTooltip(
+                `<div>
+                     Cà Phê Huy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dfcbd95a945e846da43d617477c7ebc1 = L.circleMarker(
+                [21.01139, 105.831552],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_dfcbd95a945e846da43d617477c7ebc1.bindTooltip(
+                `<div>
+                     Cà Phê Newlife
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7e918045fe6f1fb3cb9bd99624cfa7f = L.circleMarker(
+                [21.004392, 105.839385],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_f7e918045fe6f1fb3cb9bd99624cfa7f.bindTooltip(
+                `<div>
+                     café
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3881421641801fb5e4b8c328eba03cde = L.circleMarker(
+                [21.027956, 105.8363073],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_3881421641801fb5e4b8c328eba03cde.bindTooltip(
+                `<div>
+                     Cà Phê Trang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_02a5fc7a25a3ee7e02041984ea8465d7 = L.circleMarker(
+                [21.0188481, 105.8249754],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_02a5fc7a25a3ee7e02041984ea8465d7.bindTooltip(
+                `<div>
+                     Highlands Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb32ea3dfc8be68461c992d7c924b551 = L.circleMarker(
+                [21.0068031, 105.8035686],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_fb32ea3dfc8be68461c992d7c924b551.bindTooltip(
+                `<div>
+                     TwitterBeans Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aea92049480b81cc200a06fd734b0890 = L.circleMarker(
+                [21.001284, 105.8039288],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_aea92049480b81cc200a06fd734b0890.bindTooltip(
+                `<div>
+                     Cà Phê Lion
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1bdc3218d97dd540db756c970c63cdc9 = L.circleMarker(
+                [20.9839177, 105.8155864],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_1bdc3218d97dd540db756c970c63cdc9.bindTooltip(
+                `<div>
+                     Cà Phê KOK
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_edf1ec6ba1629c4696eeee8f8f4d0bc7 = L.circleMarker(
+                [21.0128634, 105.8176699],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_edf1ec6ba1629c4696eeee8f8f4d0bc7.bindTooltip(
+                `<div>
+                     Cà Phê Grazio's
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3bba6c3df53f77f6559edbe5807f0e87 = L.circleMarker(
+                [21.010401, 105.8148684],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_3bba6c3df53f77f6559edbe5807f0e87.bindTooltip(
+                `<div>
+                     Trekking Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_af0e9970b4feedc098111ea29ba2a87c = L.circleMarker(
+                [21.0155824, 105.8103911],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_af0e9970b4feedc098111ea29ba2a87c.bindTooltip(
+                `<div>
+                     Cà Phê EZ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_55710adeaafa6726d60c09a5f87fba87 = L.circleMarker(
+                [21.0279997, 105.832654],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_55710adeaafa6726d60c09a5f87fba87.bindTooltip(
+                `<div>
+                     Trà Bát Bảo Tuấn Béo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_456af9cfd2120c931ad4992f012f774e = L.circleMarker(
+                [21.0206485, 105.8264097],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_456af9cfd2120c931ad4992f012f774e.bindTooltip(
+                `<div>
+                     Trà Sữa Chachago
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b3e8e0da51c271f95cc2ed5578b74e91 = L.circleMarker(
+                [21.0263451, 105.8325665],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_b3e8e0da51c271f95cc2ed5578b74e91.bindTooltip(
+                `<div>
+                     café
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e293486741340d0d6855444df0f1c81 = L.circleMarker(
+                [21.0190747, 105.8258183],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_3e293486741340d0d6855444df0f1c81.bindTooltip(
+                `<div>
+                     café
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd90f5d940077d941a0d90522b932c35 = L.circleMarker(
+                [21.0153324, 105.8127353],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_fd90f5d940077d941a0d90522b932c35.bindTooltip(
+                `<div>
+                     Cà Phê Cơm Chay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b9e93e93bc6a1c01b6e7fd27dd5cbed = L.circleMarker(
+                [21.0129135, 105.8254307],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_1b9e93e93bc6a1c01b6e7fd27dd5cbed.bindTooltip(
+                `<div>
+                     Cà Phê Bestea House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ecf13dd0c757c61d0f2f1ff20b6d645c = L.circleMarker(
+                [21.0014345, 105.818546],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_ecf13dd0c757c61d0f2f1ff20b6d645c.bindTooltip(
+                `<div>
+                     Cà Phê Aroi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_517774d50117bd98a5171a9d23d0e04f = L.circleMarker(
+                [20.9997365, 105.8028545],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_517774d50117bd98a5171a9d23d0e04f.bindTooltip(
+                `<div>
+                     café
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5d2d653145a944a99c11de5813e9997a = L.circleMarker(
+                [20.9997546, 105.8028747],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_5d2d653145a944a99c11de5813e9997a.bindTooltip(
+                `<div>
+                     café
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_adfbb9d07f75b13ccf08db73f0d12e88 = L.circleMarker(
+                [20.999943, 105.8032082],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_adfbb9d07f75b13ccf08db73f0d12e88.bindTooltip(
+                `<div>
+                     Twins Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d6247a802bef6310dcc90a21715f1d5 = L.circleMarker(
+                [21.0165081, 105.810914],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_9d6247a802bef6310dcc90a21715f1d5.bindTooltip(
+                `<div>
+                     Cà Phê Kool Off
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a2816b7cd56ddb34dab75dccf8808719 = L.circleMarker(
+                [20.9908834, 105.8067936],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_a2816b7cd56ddb34dab75dccf8808719.bindTooltip(
+                `<div>
+                     Cà Phê Anh Hoàng
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a3178aa2eaf7b87b5ab297f90e033ed3 = L.circleMarker(
+                [21.0156993, 105.8256523],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_a3178aa2eaf7b87b5ab297f90e033ed3.bindTooltip(
+                `<div>
+                     Phòng Trà Phố Nghèo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_774481fd6fd78896ad9f2ea2badd868e = L.circleMarker(
+                [21.0171332, 105.8271201],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_774481fd6fd78896ad9f2ea2badd868e.bindTooltip(
+                `<div>
+                     Cà Phê Moonlight
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d3e8f32b9ff33cea19e2432efb526b2 = L.circleMarker(
+                [21.0157387, 105.8057259],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_4d3e8f32b9ff33cea19e2432efb526b2.bindTooltip(
+                `<div>
+                     Cà Phê Gemini
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23336acb7a652d57aa855c95124d9091 = L.circleMarker(
+                [21.0155801, 105.8055264],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_23336acb7a652d57aa855c95124d9091.bindTooltip(
+                `<div>
+                     Trà Tiên Hưởng
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9801030d0ce16515e8798672c6e1e0f = L.circleMarker(
+                [21.0225583, 105.8003246],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_d9801030d0ce16515e8798672c6e1e0f.bindTooltip(
+                `<div>
+                     Cà Phê Aroi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_67bbcc488bcfdb82708fd947729bc4ef = L.circleMarker(
+                [21.0117444, 105.8368942],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_67bbcc488bcfdb82708fd947729bc4ef.bindTooltip(
+                `<div>
+                     Taste Tea
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_74e0aff473c249c6df36221b63a5f8d6 = L.circleMarker(
+                [21.0232846, 105.8075363],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_74e0aff473c249c6df36221b63a5f8d6.bindTooltip(
+                `<div>
+                     Trà sữa Cha Go Tea
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c07a15d2af257b37e4184d77a12ad47 = L.circleMarker(
+                [21.0232359, 105.8077753],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_8c07a15d2af257b37e4184d77a12ad47.bindTooltip(
+                `<div>
+                     Trà sữa Tea Station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44424c6c2bb3da52cd89137376d9eaf2 = L.circleMarker(
+                [21.0233672, 105.8070266],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_44424c6c2bb3da52cd89137376d9eaf2.bindTooltip(
+                `<div>
+                     Ding Tea
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c55e0c7150223e02e9551fcb1f153675 = L.circleMarker(
+                [21.0229944, 105.8015308],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_c55e0c7150223e02e9551fcb1f153675.bindTooltip(
+                `<div>
+                     Cà Phê Feeling Tea
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9a5b2a870442a487802e5ea0f2373d60 = L.circleMarker(
+                [21.0070005, 105.8056127],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_9a5b2a870442a487802e5ea0f2373d60.bindTooltip(
+                `<div>
+                     The Farmer gardenista
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d8aa5822f244cc3e67b6e4b0fe5812a = L.circleMarker(
+                [21.0218055, 105.8090158],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_4d8aa5822f244cc3e67b6e4b0fe5812a.bindTooltip(
+                `<div>
+                     Star Cafe - Nhà Hàng Sân Vườn Trên Cao
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f3eb3683e27b525d8dfa4752e5b6731 = L.circleMarker(
+                [21.018728, 105.8028012],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_7f3eb3683e27b525d8dfa4752e5b6731.bindTooltip(
+                `<div>
+                     Cà Phê Happyland
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e51befdb15aa0216089bd53f45452be2 = L.circleMarker(
+                [21.0011223, 105.8180277],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_e51befdb15aa0216089bd53f45452be2.bindTooltip(
+                `<div>
+                     Cà Phê Firefly
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09f8ec66965d3d5de859fbfa4ca6858c = L.circleMarker(
+                [21.0072985, 105.8054342],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_09f8ec66965d3d5de859fbfa4ca6858c.bindTooltip(
+                `<div>
+                     café
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c072c00db3f80de754d850710ad565cb = L.circleMarker(
+                [21.0179231, 105.8327862],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_c072c00db3f80de754d850710ad565cb.bindTooltip(
+                `<div>
+                     Quán Cầm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_461ba99fcfb558ab1e408d39427bdcd5 = L.circleMarker(
+                [21.0271045, 105.8357536],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_461ba99fcfb558ab1e408d39427bdcd5.bindTooltip(
+                `<div>
+                     Cà Phê Văn Miêu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2d5dadd2939e3e510b29ca9f4f94ff6c = L.circleMarker(
+                [21.0213112, 105.8356994],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_2d5dadd2939e3e510b29ca9f4f94ff6c.bindTooltip(
+                `<div>
+                     Tiệm cà phê LẠ LÙNG
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ebe8117526556155032e5dcee55a39fb = L.circleMarker(
+                [21.0227243, 105.8074863],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_ebe8117526556155032e5dcee55a39fb.bindTooltip(
+                `<div>
+                     Cà Phê Meo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fba09a10977109cc872c3bad0b59c3d7 = L.circleMarker(
+                [21.0241419, 105.8042783],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_fba09a10977109cc872c3bad0b59c3d7.bindTooltip(
+                `<div>
+                     Cà Phê Gotham
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d093efaf201a058df92b3b2c45f2b7f6 = L.circleMarker(
+                [21.0043211, 105.8184802],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_d093efaf201a058df92b3b2c45f2b7f6.bindTooltip(
+                `<div>
+                     Cộng Cà Phê
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b496c663f787d1513853f2c78a23c3ce = L.circleMarker(
+                [21.016165, 105.8228777],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_b496c663f787d1513853f2c78a23c3ce.bindTooltip(
+                `<div>
+                     Cà Phê Aha
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_074b81146da3629a6b47542c1333945b = L.circleMarker(
+                [20.999783, 105.8186864],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_074b81146da3629a6b47542c1333945b.bindTooltip(
+                `<div>
+                     Cà Phê B59
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6afd5c35935d8c846ae31dd859bc63a5 = L.circleMarker(
+                [20.9862022, 105.8142353],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_6afd5c35935d8c846ae31dd859bc63a5.bindTooltip(
+                `<div>
+                     501 Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c12aaec8f6551da2d4551ea00924b74a = L.circleMarker(
+                [20.9995301, 105.8358693],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_c12aaec8f6551da2d4551ea00924b74a.bindTooltip(
+                `<div>
+                     Cà Phê Events
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_08d55ac3dfd1706bda62f09a3ee179ec = L.circleMarker(
+                [21.0108368, 105.8310086],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_08d55ac3dfd1706bda62f09a3ee179ec.bindTooltip(
+                `<div>
+                     Cà Phê Chợ - Trung Tự
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_622d1071eae84b2d1dd932ce92328ff1 = L.circleMarker(
+                [21.0109309, 105.8310692],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_622d1071eae84b2d1dd932ce92328ff1.bindTooltip(
+                `<div>
+                     Cà Phê Gemax
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_53fe8d34a235b14322795555902f7a48 = L.circleMarker(
+                [21.0073438, 105.8056321],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_53fe8d34a235b14322795555902f7a48.bindTooltip(
+                `<div>
+                     nohu xoak·win
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d654f07a3b271de3b02c1e01183089a = L.circleMarker(
+                [21.0160294, 105.8211463],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_4d654f07a3b271de3b02c1e01183089a.bindTooltip(
+                `<div>
+                     Cà Phê La Ka
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_33cba5ed261e589bdc751ec2c5c391c3 = L.circleMarker(
+                [21.0024746, 105.8203931],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_33cba5ed261e589bdc751ec2c5c391c3.bindTooltip(
+                `<div>
+                     café
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ed79814f260cf0ab9bbf2bdcf9b750f1 = L.circleMarker(
+                [20.995533, 105.8155092],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_ed79814f260cf0ab9bbf2bdcf9b750f1.bindTooltip(
+                `<div>
+                     Cà Phê Memoria
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ee0956c2fbf29f3e25ac637c08f0b3a7 = L.circleMarker(
+                [20.9867533, 105.8110908],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_ee0956c2fbf29f3e25ac637c08f0b3a7.bindTooltip(
+                `<div>
+                     tổ 15A
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_94b2255dc8abc5f1e6cc58605b74388f = L.circleMarker(
+                [20.995039, 105.805734],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_94b2255dc8abc5f1e6cc58605b74388f.bindTooltip(
+                `<div>
+                     The Coffee House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d7e5fe1fee6843b27f3b54cefd4b114 = L.circleMarker(
+                [21.0011467, 105.8225377],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_9d7e5fe1fee6843b27f3b54cefd4b114.bindTooltip(
+                `<div>
+                     The Coffee House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba2f0351568211392e5eb232d607c020 = L.circleMarker(
+                [21.016055, 105.821272],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_ba2f0351568211392e5eb232d607c020.bindTooltip(
+                `<div>
+                     The Coffee House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_514fad1481f336329eb7b61fe8763011 = L.circleMarker(
+                [21.0090373, 105.8237962],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_514fad1481f336329eb7b61fe8763011.bindTooltip(
+                `<div>
+                     The Coffee House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b625df7fbd49917b50ddd2ccf0b1e6f4 = L.circleMarker(
+                [21.0216243, 105.826334],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_b625df7fbd49917b50ddd2ccf0b1e6f4.bindTooltip(
+                `<div>
+                     The Coffee House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_98ea375fc627d9ce14d03ab4917a0461 = L.circleMarker(
+                [21.0154289, 105.8123911],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_98ea375fc627d9ce14d03ab4917a0461.bindTooltip(
+                `<div>
+                     The Caffinet
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6b2f253454617a56fd1f935d55ac568a = L.circleMarker(
+                [21.0295931, 105.8385729],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_6b2f253454617a56fd1f935d55ac568a.bindTooltip(
+                `<div>
+                     Cà Phê Connect
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_888cf9537b28078dad4af17cee9b5fa3 = L.circleMarker(
+                [21.0008391, 105.8376456],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_888cf9537b28078dad4af17cee9b5fa3.bindTooltip(
+                `<div>
+                     Cà Phê Tùng
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c499c110526f026cfcb94f44f73c234 = L.circleMarker(
+                [21.0160452, 105.8200982],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_3c499c110526f026cfcb94f44f73c234.bindTooltip(
+                `<div>
+                     Xưởng cafe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a42bd3924c7b4372c04cfb814ff4e530 = L.circleMarker(
+                [21.0059069, 105.8268943],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_a42bd3924c7b4372c04cfb814ff4e530.bindTooltip(
+                `<div>
+                     Cà Phê Sách
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1fc1465ea6b275c626183bcd9015a83a = L.circleMarker(
+                [21.0178659, 105.8368086],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_1fc1465ea6b275c626183bcd9015a83a.bindTooltip(
+                `<div>
+                     Cà Phê Mèo Lizzi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7297cd33e6c19aacff225443b436be18 = L.circleMarker(
+                [21.019129, 105.8251761],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_7297cd33e6c19aacff225443b436be18.bindTooltip(
+                `<div>
+                     Cà Phê KoPee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_38d6a64e0ecb74c66547d7fe99317b99 = L.circleMarker(
+                [21.0114587, 105.8306321],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_38d6a64e0ecb74c66547d7fe99317b99.bindTooltip(
+                `<div>
+                     Cafe Ông Bầu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0836bee3ff84eb774d2853f655448695 = L.circleMarker(
+                [21.02008, 105.8193034],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_0836bee3ff84eb774d2853f655448695.bindTooltip(
+                `<div>
+                     Tâm chay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_678b6de99f5cdb31b852938bafa85afb = L.circleMarker(
+                [20.9973687, 105.8367015],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_678b6de99f5cdb31b852938bafa85afb.bindTooltip(
+                `<div>
+                     Cà Phê Arena
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2423e7d4ecfbe82f35f7b7969f4655af = L.circleMarker(
+                [21.0088841, 105.8347524],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_2423e7d4ecfbe82f35f7b7969f4655af.bindTooltip(
+                `<div>
+                     Cộng Cà Phê
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e082c32b69b2aeb0a4d973afec2b626 = L.circleMarker(
+                [21.0034874, 105.8107186],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_3e082c32b69b2aeb0a4d973afec2b626.bindTooltip(
+                `<div>
+                     Tịnh Cafe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ec211e888f2eb45322e3ed74f110158 = L.circleMarker(
+                [21.0277894, 105.8367568],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_0ec211e888f2eb45322e3ed74f110158.bindTooltip(
+                `<div>
+                     Hien Minh Tea House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76fd0b24ab39087aed8ba36027af2b90 = L.circleMarker(
+                [20.9839071, 105.7998148],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_76fd0b24ab39087aed8ba36027af2b90.bindTooltip(
+                `<div>
+                     5050 Rooftop Cafe & Pub
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9033a9fb79d5c13cc4da6a8cf5f4f73f = L.circleMarker(
+                [21.0182979, 105.8368624],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_9033a9fb79d5c13cc4da6a8cf5f4f73f.bindTooltip(
+                `<div>
+                     Auden Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_370815d0852f5f794009ce3db4c36b01 = L.circleMarker(
+                [21.00756, 105.8341955],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_370815d0852f5f794009ce3db4c36b01.bindTooltip(
+                `<div>
+                     Lane 8 Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b49b14266242999d1891fdcbdc9f1e61 = L.circleMarker(
+                [20.9999578, 105.8273867],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_b49b14266242999d1891fdcbdc9f1e61.bindTooltip(
+                `<div>
+                     The Mob Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c54de6c96c992e0f0f3e717d1f894e8b = L.circleMarker(
+                [21.008167, 105.8201771],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_c54de6c96c992e0f0f3e717d1f894e8b.bindTooltip(
+                `<div>
+                     Coffee Cây
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c512beb2968ccb09d814b793cd767499 = L.circleMarker(
+                [21.0265158, 105.825516],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_c512beb2968ccb09d814b793cd767499.bindTooltip(
+                `<div>
+                     TOHA Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a84149a322ff7a818a99fc0ac5fb3892 = L.circleMarker(
+                [21.0143604, 105.8149793],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_a84149a322ff7a818a99fc0ac5fb3892.bindTooltip(
+                `<div>
+                     Stay Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_72141dfeae5f26de62ae30c0302eae84 = L.circleMarker(
+                [21.0089194, 105.8363256],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_72141dfeae5f26de62ae30c0302eae84.bindTooltip(
+                `<div>
+                     Basket Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb84e8a5239910514520e781bc70ae4a = L.circleMarker(
+                [21.0160571, 105.8117151],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_fb84e8a5239910514520e781bc70ae4a.bindTooltip(
+                `<div>
+                     Cà phê D9+
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3e222279e8e0f2f0485c97fd6b05492c = L.circleMarker(
+                [21.0091721, 105.825831],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_3e222279e8e0f2f0485c97fd6b05492c.bindTooltip(
+                `<div>
+                     The Shelter Tây Sơn
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5f8bd41cba2afd72fbfcc54ae6cf5e08 = L.circleMarker(
+                [21.0185805, 105.8079522],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_5f8bd41cba2afd72fbfcc54ae6cf5e08.bindTooltip(
+                `<div>
+                     Rauta House Café
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78564133d93c2114b4bcf9f63a6491ce = L.circleMarker(
+                [21.0292815, 105.8358184],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_78564133d93c2114b4bcf9f63a6491ce.bindTooltip(
+                `<div>
+                     Thư Quán
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac106da1ee2187c25c03defffb841ae1 = L.circleMarker(
+                [21.0060413, 105.8320827],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_ac106da1ee2187c25c03defffb841ae1.bindTooltip(
+                `<div>
+                     Highlands Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3afd6d3a333d084263cddb5bbec540a5 = L.circleMarker(
+                [21.0061879, 105.8316717],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_3afd6d3a333d084263cddb5bbec540a5.bindTooltip(
+                `<div>
+                     Starbucks
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_909c47b3d1a288a8e0b331caf66c30c6 = L.circleMarker(
+                [20.9858452, 105.8126081],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_909c47b3d1a288a8e0b331caf66c30c6.bindTooltip(
+                `<div>
+                     Highlands Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_18032283a2c38e5119103dee1633ef9c = L.circleMarker(
+                [21.0167236, 105.8211964],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_18032283a2c38e5119103dee1633ef9c.bindTooltip(
+                `<div>
+                     Skyline Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb6c165cdd966414cf1ccdb61526800f = L.circleMarker(
+                [21.017571, 105.8408996],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_eb6c165cdd966414cf1ccdb61526800f.bindTooltip(
+                `<div>
+                     Hanoi Train Track Cafe - Coffee 17
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f648a2a27fccdf9e61e35ea89d65bc9 = L.circleMarker(
+                [21.0233012, 105.809692],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_6f648a2a27fccdf9e61e35ea89d65bc9.bindTooltip(
+                `<div>
+                     Highlands Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42262671f5dbd9488323506fd33d8d9e = L.circleMarker(
+                [21.0286277, 105.8371766],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_42262671f5dbd9488323506fd33d8d9e.bindTooltip(
+                `<div>
+                     Ardor
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4067c5bcfe91db2db7caf73fd2bd7fab = L.circleMarker(
+                [21.0108217, 105.8268558],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_4067c5bcfe91db2db7caf73fd2bd7fab.bindTooltip(
+                `<div>
+                     Sii Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_32e239184dffa7c4400260288c90ff73 = L.circleMarker(
+                [21.0069441, 105.8405363],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_32e239184dffa7c4400260288c90ff73.bindTooltip(
+                `<div>
+                     Highlands Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a0eccc35f8d1a39db8025107cf82b93 = L.circleMarker(
+                [21.0182922, 105.8288805],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_2a0eccc35f8d1a39db8025107cf82b93.bindTooltip(
+                `<div>
+                     Cha Tra Thai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d1394601aca270cbfdccf96a21576936 = L.circleMarker(
+                [21.0133633, 105.8315728],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_d1394601aca270cbfdccf96a21576936.bindTooltip(
+                `<div>
+                     Cine Cafe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78bdb3888dce8593a200fda69b2137a3 = L.circleMarker(
+                [21.0131788, 105.8317593],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_78bdb3888dce8593a200fda69b2137a3.bindTooltip(
+                `<div>
+                     Moon Cafe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_75b93078e9c3a8fdadcc0ff8ffd92116 = L.circleMarker(
+                [21.0131141, 105.8318129],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_75b93078e9c3a8fdadcc0ff8ffd92116.bindTooltip(
+                `<div>
+                     Bro's Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cb19d275cfa0e18a54e95668746623c2 = L.circleMarker(
+                [21.013063, 105.8318708],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_cb19d275cfa0e18a54e95668746623c2.bindTooltip(
+                `<div>
+                     Cafe Kỳ Ngộ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd1b911d21cfb6e1b0f9b704ca83ea8f = L.circleMarker(
+                [21.0103138, 105.8365182],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_fd1b911d21cfb6e1b0f9b704ca83ea8f.bindTooltip(
+                `<div>
+                     Ding Tea
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_adfc8553a4802849534747294e90ca20 = L.circleMarker(
+                [21.0102855, 105.8364829],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_adfc8553a4802849534747294e90ca20.bindTooltip(
+                `<div>
+                     Cafe Muối
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b3d719a68bec9fbe2211087e114c572d = L.circleMarker(
+                [21.0102232, 105.8364026],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_b3d719a68bec9fbe2211087e114c572d.bindTooltip(
+                `<div>
+                     Mixue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5043131b8f8e9ec881a6915696a08cce = L.circleMarker(
+                [21.0101675, 105.8363349],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_5043131b8f8e9ec881a6915696a08cce.bindTooltip(
+                `<div>
+                     Smuzi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fe25514f8bc4098a79ea966fa2aaf6be = L.circleMarker(
+                [21.0098283, 105.8361421],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_fe25514f8bc4098a79ea966fa2aaf6be.bindTooltip(
+                `<div>
+                     Of Him Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9e3eac9da58e234f3873895ef5e19b0 = L.circleMarker(
+                [21.0098157, 105.8358883],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_f9e3eac9da58e234f3873895ef5e19b0.bindTooltip(
+                `<div>
+                     café
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_56834459589406185ddea357944b99d9 = L.circleMarker(
+                [21.0093422, 105.8352718],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_56834459589406185ddea357944b99d9.bindTooltip(
+                `<div>
+                     The Cha
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_078adfcb8ab5b80510419c1169827ad9 = L.circleMarker(
+                [21.0090783, 105.8349323],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_078adfcb8ab5b80510419c1169827ad9.bindTooltip(
+                `<div>
+                     Oh! Ze
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23edc9171bc73071c509a759eb213df4 = L.circleMarker(
+                [21.0089942, 105.8348302],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_23edc9171bc73071c509a759eb213df4.bindTooltip(
+                `<div>
+                     Đô Đô
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_51e837da1f910000d681db524fe3ef4e = L.circleMarker(
+                [21.0087906, 105.8346209],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_51e837da1f910000d681db524fe3ef4e.bindTooltip(
+                `<div>
+                     Phê La
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_333e235cf89b0c3ef931fae11f406914 = L.circleMarker(
+                [21.0084411, 105.8343014],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_333e235cf89b0c3ef931fae11f406914.bindTooltip(
+                `<div>
+                     Mixue
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d1f657b28344000f18f6a3746c7ac64 = L.circleMarker(
+                [21.0083674, 105.8341949],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_9d1f657b28344000f18f6a3746c7ac64.bindTooltip(
+                `<div>
+                     Tmore - Tiệm Trà Chanh
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d35392a2d39f1a3200e49dcb1edf47d8 = L.circleMarker(
+                [21.0083355, 105.8341594],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_d35392a2d39f1a3200e49dcb1edf47d8.bindTooltip(
+                `<div>
+                     Cing Hu Tang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f644c5d2298211d79dbd3ee3e31b240 = L.circleMarker(
+                [21.0104261, 105.8361029],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_1f644c5d2298211d79dbd3ee3e31b240.bindTooltip(
+                `<div>
+                     Cafe'CITO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bed08df8e2df52f53390b0163effd95b = L.circleMarker(
+                [21.0104003, 105.836079],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_bed08df8e2df52f53390b0163effd95b.bindTooltip(
+                `<div>
+                     AHA Cafe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4be3e9f3f7e84e108792bd7f8adf62ab = L.circleMarker(
+                [21.0103746, 105.8360523],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_4be3e9f3f7e84e108792bd7f8adf62ab.bindTooltip(
+                `<div>
+                     Café Cỏ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7357db75e4d1ff772c12ee363e8abd8c = L.circleMarker(
+                [21.029672, 105.8278379],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_7357db75e4d1ff772c12ee363e8abd8c.bindTooltip(
+                `<div>
+                     Highlands Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a83f04fe1f69d7b9a22749925470ec48 = L.circleMarker(
+                [21.0277544, 105.8273234],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_a83f04fe1f69d7b9a22749925470ec48.bindTooltip(
+                `<div>
+                     Hanoi Metro Cafe & Canteen
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4726cb90d1bc37ea89f44e0febc4e320 = L.circleMarker(
+                [21.012747, 105.8322087],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_4726cb90d1bc37ea89f44e0febc4e320.bindTooltip(
+                `<div>
+                     Co:coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a909c5551fd9580245065d9065d5a355 = L.circleMarker(
+                [21.0062933, 105.832697],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_a909c5551fd9580245065d9065d5a355.bindTooltip(
+                `<div>
+                     Toninni Caffe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f730aee4c81e5bc6c1ea1a196a5891f2 = L.circleMarker(
+                [21.0053804, 105.8056588],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_f730aee4c81e5bc6c1ea1a196a5891f2.bindTooltip(
+                `<div>
+                     Starbucks
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf25c5a562859f97571f442f86681c48 = L.circleMarker(
+                [21.0053411, 105.8053639],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_cf25c5a562859f97571f442f86681c48.bindTooltip(
+                `<div>
+                     Katinat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c24762f25dcc3924cbebfbba5e3343b6 = L.circleMarker(
+                [21.0061839, 105.8327223],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_c24762f25dcc3924cbebfbba5e3343b6.bindTooltip(
+                `<div>
+                     San Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae6e44b3cc53f36f893e0b3e29ef44ea = L.circleMarker(
+                [21.016033, 105.8200804],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_ae6e44b3cc53f36f893e0b3e29ef44ea.bindTooltip(
+                `<div>
+                     Xưởng Cafe Hoàng Cầu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2798ea60f90cbf144b4048a9f97adffc = L.circleMarker(
+                [21.017498, 105.8409355],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_2798ea60f90cbf144b4048a9f97adffc.bindTooltip(
+                `<div>
+                     Hà Nội phố coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_555a3b7105fd12da6684a3b4437381f4 = L.circleMarker(
+                [21.0174878, 105.8294713],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_555a3b7105fd12da6684a3b4437381f4.bindTooltip(
+                `<div>
+                     Highlands Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_45f8b1e24df4865dcdfe80b0fda4988a = L.circleMarker(
+                [21.0170143, 105.8186847],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_45f8b1e24df4865dcdfe80b0fda4988a.bindTooltip(
+                `<div>
+                     Clover Coffee & Tea
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c780c1061cf2855d311121c3cf345fca = L.circleMarker(
+                [21.0149914, 105.8154569],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_c780c1061cf2855d311121c3cf345fca.bindTooltip(
+                `<div>
+                     Hub de Tana
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9a771a2fdd1a6929f1661d799d1f0b0 = L.circleMarker(
+                [21.0075025, 105.8391538],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_f9a771a2fdd1a6929f1661d799d1f0b0.bindTooltip(
+                `<div>
+                     Tak Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_def999a3c276b03f9eedc1c35cc6c09b = L.circleMarker(
+                [21.0276317, 105.8404277],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_def999a3c276b03f9eedc1c35cc6c09b.bindTooltip(
+                `<div>
+                     Ép Station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b70d1307229fa7defb3bd7708641520 = L.circleMarker(
+                [21.0086418, 105.8339421],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_1b70d1307229fa7defb3bd7708641520.bindTooltip(
+                `<div>
+                     café
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b6ce98c3c16acc42fc84df654bba6de7 = L.circleMarker(
+                [21.0126555, 105.8323499],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_b6ce98c3c16acc42fc84df654bba6de7.bindTooltip(
+                `<div>
+                     Cafe Phương Việt
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9df82ff8d69da01c9c1bb90186f3379d = L.circleMarker(
+                [21.0268114, 105.8357284],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_9df82ff8d69da01c9c1bb90186f3379d.bindTooltip(
+                `<div>
+                     café
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_553e6d11fc118d2c533b600a5183f72c = L.circleMarker(
+                [21.0265606, 105.8396378],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_553e6d11fc118d2c533b600a5183f72c.bindTooltip(
+                `<div>
+                     Amoring café
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0019050222890dbdf7f0ffcebc6302d6 = L.circleMarker(
+                [21.0292008, 105.8379683],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_0019050222890dbdf7f0ffcebc6302d6.bindTooltip(
+                `<div>
+                     La Do Mi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a0cd4e995c25f854189a396dfeb2a259 = L.circleMarker(
+                [21.0057774, 105.8310755],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_a0cd4e995c25f854189a396dfeb2a259.bindTooltip(
+                `<div>
+                     café
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57686f05ea35acef8a0041eab2382260 = L.circleMarker(
+                [21.0043896, 105.8102735],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_57686f05ea35acef8a0041eab2382260.bindTooltip(
+                `<div>
+                     Bac Cafe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f2c5b758f7e69133d79c7c33475c3a7b = L.circleMarker(
+                [20.9894813, 105.8405989],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_f2c5b758f7e69133d79c7c33475c3a7b.bindTooltip(
+                `<div>
+                     Tiny Cafe - Revolution
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_92071065a33706a96c4995b2bca717c3 = L.circleMarker(
+                [21.0218118, 105.8056891],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_92071065a33706a96c4995b2bca717c3.bindTooltip(
+                `<div>
+                     café
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f2edd46496963997426f330c6e7e3d0f = L.circleMarker(
+                [21.0029673, 105.8152743],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_f2edd46496963997426f330c6e7e3d0f.bindTooltip(
+                `<div>
+                     Highlands Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2eda6d2e2cccd08df3dd6036a40fea93 = L.circleMarker(
+                [21.0026226, 105.8162691],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_2eda6d2e2cccd08df3dd6036a40fea93.bindTooltip(
+                `<div>
+                     Ding Tea
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b62d395d97dd1b3e64eb6126251a36d = L.circleMarker(
+                [21.0126665, 105.8322829],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_1b62d395d97dd1b3e64eb6126251a36d.bindTooltip(
+                `<div>
+                     Aha Cafe
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6287e4b51776d9cda4d298caf0caa828 = L.circleMarker(
+                [21.0280379, 105.8363381],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_6287e4b51776d9cda4d298caf0caa828.bindTooltip(
+                `<div>
+                     Refined
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b765d201a588c64d83898b1a4f6aff5 = L.circleMarker(
+                [21.0164959, 105.8114667],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_1b765d201a588c64d83898b1a4f6aff5.bindTooltip(
+                `<div>
+                     O Zone - Films, Art & Coffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a3839f7408983ef8ae2fd72a327c788 = L.circleMarker(
+                [21.0108431, 105.8325005],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_5a3839f7408983ef8ae2fd72a327c788.bindTooltip(
+                `<div>
+                     Trang Cafe Sầu Bá Đạo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a94be09747e39538f14a556919e282ae = L.circleMarker(
+                [21.0253429, 105.8226268],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_a94be09747e39538f14a556919e282ae.bindTooltip(
+                `<div>
+                     The Ivy House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6d0a556b5718ac7d9e6f76aa9da21b34 = L.circleMarker(
+                [21.0128516, 105.832171],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_6d0a556b5718ac7d9e6f76aa9da21b34.bindTooltip(
+                `<div>
+                     The Nammin House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a0cc985b5668fca31f678e682c78250 = L.circleMarker(
+                [21.01594, 105.8318757],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_2a0cc985b5668fca31f678e682c78250.bindTooltip(
+                `<div>
+                     café
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_857457fe38f497407e1988574e6681bb = L.circleMarker(
+                [21.019534, 105.8085677],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_857457fe38f497407e1988574e6681bb.bindTooltip(
+                `<div>
+                     Teapress
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c3d919a06c8ed47cb89f7a4df40401d = L.circleMarker(
+                [20.9907725, 105.8380734],
+                {"bubblingMouseEvents": true, "color": "#0b0b0b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0b0b", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.5, "stroke": true, "weight": 3}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            circle_marker_2c3d919a06c8ed47cb89f7a4df40401d.bindTooltip(
+                `<div>
+                     Cafe sách- Tòa C4 HVQLGD
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_58c43cbeccf5ee4318bad9ba5e7409d4 = L.marker(
+                [21.00311084972489, 105.80420227603331],
+                {
+}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            marker_58c43cbeccf5ee4318bad9ba5e7409d4.bindTooltip(
+                `<div>
+                     Thanh Xuân block 1: shortfall 3.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_76bdae170d5993ab21980eaa90ac317a = L.marker(
+                [20.994076094116313, 105.80415388366103],
+                {
+}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            marker_76bdae170d5993ab21980eaa90ac317a.bindTooltip(
+                `<div>
+                     Thanh Xuân block 2: shortfall 2.1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_63dad26cbbdaf94f348ff4fe28b8a277 = L.marker(
+                [20.998478164610706, 105.82823031561419],
+                {
+}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            marker_63dad26cbbdaf94f348ff4fe28b8a277.bindTooltip(
+                `<div>
+                     Thanh Xuân block 3: shortfall 2.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1f5f072a5037e98b8ee5667ce0d29d12 = L.marker(
+                [20.998501498084423, 105.82341988090081],
+                {
+}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            marker_1f5f072a5037e98b8ee5667ce0d29d12.bindTooltip(
+                `<div>
+                     Thanh Xuân block 4: shortfall 1.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4eb32e9bd99018db7415e5041496c5fd = L.marker(
+                [21.007582486659462, 105.8138479759474],
+                {
+}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            marker_4eb32e9bd99018db7415e5041496c5fd.bindTooltip(
+                `<div>
+                     Thanh Xuân block 5: shortfall 1.8
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_83acc301ecf1ac4f7553033705ba724f = L.marker(
+                [21.030076052227553, 105.83321635742448],
+                {
+}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            marker_83acc301ecf1ac4f7553033705ba724f.bindTooltip(
+                `<div>
+                     Đống Đa block 1: shortfall 5.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_47ad122f4bc44d57aa0ca71d76dfa852 = L.marker(
+                [21.016524056646748, 105.83314105444424],
+                {
+}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            marker_47ad122f4bc44d57aa0ca71d76dfa852.bindTooltip(
+                `<div>
+                     Đống Đa block 2: shortfall 3.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c3412bdbab68b3f4a17d522b97145e25 = L.marker(
+                [21.025558722793278, 105.83319124976933],
+                {
+}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            marker_c3412bdbab68b3f4a17d522b97145e25.bindTooltip(
+                `<div>
+                     Đống Đa block 3: shortfall 3.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b9b0543e195e3ce99d6666826f3816bc = L.marker(
+                [21.0074657644663, 105.83790159666327],
+                {
+}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            marker_b9b0543e195e3ce99d6666826f3816bc.bindTooltip(
+                `<div>
+                     Đống Đa block 4: shortfall 3.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dfc86826a6ad5458525c4b89c6568e18 = L.marker(
+                [21.03009956019355, 105.82840491552408],
+                {
+}
+            ).addTo(map_3251222eb038482811a140f5e14ce7cb);
+        
+    
+            marker_dfc86826a6ad5458525c4b89c6568e18.bindTooltip(
+                `<div>
+                     Đống Đa block 5: shortfall 2.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
